@@ -6,6 +6,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 
 public class SearchTest{
+    System.out.printf("Hello qa.guru!");
     @Test
     void successfulSearchTest() {
         open("https://www.google.com/");
