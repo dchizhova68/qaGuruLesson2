@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'gmail.dchizhova68'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation (
+            "com.codeborne:selenide:6.16.0",
+            "org.junit.jupiter:junit-jupiter:5.9.3")
+}
+
+test {
+    useJUnitPlatform()
+}
